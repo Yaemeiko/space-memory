@@ -21,7 +21,7 @@ export default function App() {
 
     <Hero onButtonClick={() => setIsClicked(true)} />
     <Letter />
-    <AudioPlayer />
+    <AudioPlayer isClicked={isClicked} />
     <PhotoGallery isClicked={isClicked} />
     <VideoPlayer />
 

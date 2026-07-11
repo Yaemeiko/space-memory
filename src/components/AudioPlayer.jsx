@@ -1,9 +1,22 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { FaPlay, FaPause } from "react-icons/fa";
 
-export default function AudioPlayer() {
+export default function AudioPlayer({ isClicked }) {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
+
+  useEffect(() => {
+    if (isClicked && audioRef.current && !playing) {
+      audioRef.current.play();
+      setPlaying(true);
+    }
+  }, [isClicked, playing]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.3;
+    }
+  }, []);
 
   const toggleAudio = () => {
     if (!audioRef.current) return;
@@ -49,7 +62,7 @@ export default function AudioPlayer() {
 
         <audio
           ref={audioRef}
-          src="/audio/huf.mp3"
+          src="/audio/Tapi Tahukah Kamu - Dygta, Kamasean (Peaceful Piano)_320k.mp3"
           onEnded={() => setPlaying(false)}
         />
 
