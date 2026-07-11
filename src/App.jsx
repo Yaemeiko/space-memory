@@ -10,7 +10,7 @@ export default function App() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-white">
+    <div className="relative min-h-screen bg-slate-950 text-white overflow-x-hidden">
 
     <div className="fixed inset-0 -z-20">
         <StarsBackground />

@@ -66,7 +66,7 @@ export default function FloatingPhotos({ isClicked }) {
           key={i}
           src={photo.src}
           style={photo.style}
-          className="absolute block w-40 rounded-2xl border border-white/20 shadow-2xl"
+          className="absolute block w-20 sm:w-24 md:w-32 lg:w-40 rounded-xl sm:rounded-2xl border border-white/20 shadow-2xl"
           initial={{
             opacity: 0,
             scale: 0,

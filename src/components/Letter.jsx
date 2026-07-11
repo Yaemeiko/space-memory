@@ -4,18 +4,18 @@ export default function Letter() {
   return (
     <section
       id="letter"
-      className="min-h-screen flex items-center justify-center px-6 bg-slate-950"
+      className="min-h-screen flex items-center justify-center px-3 sm:px-6 py-10 bg-slate-950"
     >
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="max-w-3xl rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-xl"
+        className="max-w-3xl w-full rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 md:p-10 backdrop-blur-xl"
       >
-        <h2 className="mb-6 text-4xl font-bold">Untukmu ❤️</h2>
+        <h2 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl font-bold">Untukmu ❤️</h2>
 
-        <p className="leading-8 text-slate-300">
+        <p className="leading-7 sm:leading-8 text-sm sm:text-base text-slate-300">
           Hai Moon...
           <br /><br />
          Aku telah berhenti mencoba menjadi langit lain agar terlihat indah di matamu.

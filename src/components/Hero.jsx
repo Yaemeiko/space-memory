@@ -6,12 +6,12 @@ export default function Hero({ onButtonClick }) {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-950">
         <div className="absolute inset-0">
     <StarsBackground />
-    <div className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/20 blur-[180px]" />
+    <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[600px] md:w-[600px] lg:h-[700px] lg:w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/20 blur-[100px] sm:blur-[150px] md:blur-[180px]" />
 </div>
         
       <div className="absolute inset-0 bg-black/30" />
-<div className="absolute w-[600px] h-[600px] rounded-full bg-indigo-500/20 blur-[150px]" />
-      <div className="relative z-10 text-center px-6">
+<div className="absolute w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] rounded-full bg-indigo-500/20 blur-[80px] sm:blur-[120px] md:blur-[150px]" />
+      <div className="relative z-10 text-center px-4 sm:px-6">
         <motion.h1
           initial={{ opacity: 0, y: 40, 
             scale: 0.8
@@ -19,7 +19,7 @@ export default function Hero({ onButtonClick }) {
           animate={{ opacity: 1, y: 0, scale: 1
            }}    
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-6xl md:text-8xl font-bold text-white"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white"
         >
           To My Moon 🌙
         </motion.h1>
@@ -28,7 +28,7 @@ export default function Hero({ onButtonClick }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-6 max-w-xl text-lg text-slate-300 mx-auto"
+          className="mt-4 sm:mt-6 max-w-xl text-base sm:text-lg text-slate-300 mx-auto px-2 sm:px-0"
         >
           Even if the universe ends,
           my heart still knows your name.
@@ -46,7 +46,7 @@ export default function Hero({ onButtonClick }) {
       .getElementById("letter")
       ?.scrollIntoView({ behavior: "smooth" });
   }}
-  className="mt-10 rounded-full border border-indigo-400 bg-indigo-600/70 px-10 py-4 text-lg font-semibold backdrop-blur-md"
+  className="mt-8 sm:mt-10 rounded-full border border-indigo-400 bg-indigo-600/70 px-6 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold backdrop-blur-md"
 >
   Di Klik Nyak ✨
 </motion.button>
