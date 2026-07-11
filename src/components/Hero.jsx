@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import SpaceScene from "./SpaceScene";
+import StarsBackground from "./StarsBackground";
 
-export default function Hero() {
+export default function Hero({ onButtonClick }) {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-950">
         <div className="absolute inset-0">
-    <SpaceScene />
+    <StarsBackground />
     <div className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/20 blur-[180px]" />
 </div>
         
@@ -41,6 +41,7 @@ export default function Hero() {
   }}
   whileTap={{ scale: 0.96 }}
   onClick={() => {
+    onButtonClick();
     document
       .getElementById("letter")
       ?.scrollIntoView({ behavior: "smooth" });
