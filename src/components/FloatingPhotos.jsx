@@ -60,7 +60,7 @@ export default function FloatingPhotos({ isClicked }) {
   if (!showPhotos) return null;
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-20 overflow-hidden">
+    <div className="hidden lg:block fixed inset-0 pointer-events-none z-20 overflow-hidden">
       {photos.map((photo, i) => (
         <motion.img
           key={i}
