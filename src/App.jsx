@@ -5,6 +5,7 @@ import AudioPlayer from "./components/AudioPlayer";
 import VideoPlayer from "./components/VideoPlayer";
 import StarsBackground from "./components/StarsBackground";
 import FloatingPhotos from "./components/FloatingPhotos";
+import PhotoGallery from "./components/PhotoGallery";
 
 export default function App() {
   const [isClicked, setIsClicked] = useState(false);
@@ -21,6 +22,7 @@ export default function App() {
     <Hero onButtonClick={() => setIsClicked(true)} />
     <Letter />
     <AudioPlayer />
+    <PhotoGallery isClicked={isClicked} />
     <VideoPlayer />
 
 </div>
