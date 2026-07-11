@@ -21,7 +21,7 @@ export default function Hero({ onButtonClick }) {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white"
         >
-          To My Moon 🌙
+          Hallo Moon 🌙
         </motion.h1>
 
         <motion.p
