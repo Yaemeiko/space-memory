@@ -5,7 +5,7 @@ export default function VideoPlayer() {
       <div className="max-w-4xl w-full">
 
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 px-2">
-          Wleee
+          Hallo Moon 🌙
         </h2>
 
         <video
@@ -14,7 +14,20 @@ export default function VideoPlayer() {
         >
           <source src="/video/hallo moon.mp4" type="video/mp4" />
         </video>
-
+        <video
+          controls
+          className="rounded-2xl sm:rounded-3xl w-full shadow-2xl"
+        >
+          <source src="/video/firtsdate.mp4" type="video/mp4" />
+          
+        </video>
+ <video
+          controls
+          className="rounded-2xl sm:rounded-3xl w-full shadow-2xl"
+        >
+          <source src="/video/firtsdate1.mp4" type="video/mp4" />
+          
+        </video>
       </div>
 
     </section>
